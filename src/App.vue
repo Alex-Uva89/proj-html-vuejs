@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header-take-out />
+    <main-take-out />
+    <footer-take-out />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderTakeOut from './components/HeaderTakeOut.vue'
+import MainTakeOut from './components/MainTakeOut.vue'
+import FooterTakeOut from './components/FooterTakeOut.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderTakeOut,
+    MainTakeOut,
+    FooterTakeOut
   }
 }
 </script>
 
 <style lang="scss">
+@import "./assets/style/style.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Barlow', sans-serif
+
 }
 </style>
