@@ -3,7 +3,7 @@
     <!-- NAV -->
     <div class="header-top">
         <!-- LOGO -->
-        <img src="../img/takeout-logo-mobile.png" alt="">
+        <img src="../img/takeout-logo-mobile.png" alt="Logo TakeOut">
         <!-- NAVIGATORE -->
         <ul class="nav">
             <li>
@@ -31,18 +31,25 @@
         </ul>
     </div>
 
-    <!-- JUMBO -->
-
     <div class="header-bottom">
-
+        <div class="banner-jumbo">
+            <h3>Hungry?</h3>
+            <h2 class="text-focus">Great Food</h2>
+            <h2>Delivered</h2>
+            <button-view class="button-head">View our menu</button-view>
+        </div>
     </div>
   </header>
 </template>
 
 <script>
+import ButtonView from './elements/ButtonView.vue'
 
 export default {
     name: 'HeaderTakeOut',
+    components: {
+        ButtonView
+    }
 }
 </script>
 
@@ -52,7 +59,7 @@ export default {
 header{
     width: 100vw;
     height: 600px;
-    padding-top: 50px;
+    padding-top: 10px;
     background-image: url('../img/home-background-hero-scaled.jpg');
     background-size: cover;
     background-position: center;
@@ -60,13 +67,13 @@ header{
 
 .header-top{
     width: 830px;
-    height: 90px;
-    margin: auto;
-    margin-top: 25px;
+    height: 70px;
+    margin: 40px auto 100px;
     display: flex;
     justify-content: space-between;
     img{
         height: 50%;
+        cursor: pointer;
     }
 }
 
@@ -81,6 +88,29 @@ header{
             &:hover{
                 color: $goldenrod;
             }
+        }
+    }
+}
+
+.header-bottom{
+    width: 830px;
+    height: 90px;
+    margin: auto;
+    margin-top: 50px;
+    .banner-jumbo{
+        h3{
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+        .text-focus{
+            color: $goldenrod;
+            margin-bottom: -1rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        .button-head{
+            margin-top: 1rem;
         }
     }
 }

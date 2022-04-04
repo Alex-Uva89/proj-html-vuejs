@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss">
 @import "./assets/style/style.scss";
+
 #app {
   font-family: 'Barlow', sans-serif
 
