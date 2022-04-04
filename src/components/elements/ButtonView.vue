@@ -25,6 +25,7 @@ button{
     font-size: .6rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: $white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +34,7 @@ button{
     background-color: $cardinal;
     border: 1px solid $cardinal;
     border-radius: 1rem;
+    cursor: pointer;
     svg{
         width: .75rem;
     }

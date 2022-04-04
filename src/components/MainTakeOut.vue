@@ -24,17 +24,20 @@
         </ul>
       </div>
       <container-most-popular />
+      <container-sale />
 
   </main>
 </template>
 
 <script>
 import ContainerMostPopular from './containers-main/ContainerMostPopular.vue'
+import ContainerSale from './containers-main/ContainerSale.vue'
 
 export default {
     name: 'MainTakeOut',
     components: {
-        ContainerMostPopular
+        ContainerMostPopular,
+        ContainerSale
     }
 }
 </script>
@@ -52,7 +55,7 @@ main{
           margin: 0 auto;
           background-color: $white;
           position: absolute;
-          bottom: 85%;
+          bottom: 98%;
           left: 50%;
           transform: translate(-50%);
           ul{
@@ -72,6 +75,10 @@ main{
             }
           }
       }
+}
+
+.container-most-popular{
+  padding-bottom: 5rem;
 }
 
 </style>

@@ -19,7 +19,7 @@
                 <a href="#">News</a> 
             </li>
             <li>
-                <a href="#">Contact Us</a> 
+                <a href="#">Contact Us</a> TODO:
             </li>
             <li>
                 <a href="">
@@ -97,6 +97,7 @@ header{
     height: 90px;
     margin: auto;
     margin-top: 50px;
+    color: $white;
     .banner-jumbo{
         h3{
             font-size: 1.7rem;
