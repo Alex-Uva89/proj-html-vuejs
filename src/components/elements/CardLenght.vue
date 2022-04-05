@@ -1,6 +1,6 @@
 <template>
   <div class="container-card">
-      <div v-for="card in elCard" :key="card.id" class="card">
+      <div v-for="card in store.elCard" :key="card.id" class="card">
           <a href="#" class="cover">
               <font-awesome-icon icon="fa-solid fa-cart-plus" class="icon" />
               <div>view cart</div>
@@ -13,37 +13,10 @@
 </template>
 
 <script>
-import fries from '../../img/skin-on-fries-200x286.jpg'
-import choco from '../../img/choco-cookie-frappe-200x286.jpg'
-import donut from '../../img/donut-burger-200x286.jpg'
+
 
 export default {
     name:'CardLenght',
-    data(){
-        return{
-            elCard:[
-                {
-                id: '1',
-                img: fries,
-                name: 'Skin On Fries',
-                price: '$3.00 - &6.00'
-                },
-                {
-                id: '2',
-                img: choco,
-                name: 'Choco Cookie Frappe',
-                price: '$4.99'
-                },
-                {
-                id: '3',
-                img: donut,
-                name: 'The Donut Burger',
-                price: '$6.99'
-                }
-            ]
-
-        }
-    },
 }
 </script>
 

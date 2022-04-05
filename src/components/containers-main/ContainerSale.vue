@@ -21,9 +21,9 @@ export default {
     width: 100vw;
     height: 600px;
     background-image: url('../../img/first-order-background-scaled.jpg');
-    background-size: cover;
+    background-size: 130%;
     background-position-y: 100px;
-
+    background-position-x: 40%;
 }
 
 </style>

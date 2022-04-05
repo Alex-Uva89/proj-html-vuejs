@@ -19,8 +19,9 @@
                 <a href="#">News</a> 
             </li>
             <li>
-                <a href="#">Contact Us</a> TODO:
+                <a href="#">Contact Us</a> 
             </li>
+            TODO:
             <li>
                 <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">

@@ -25,11 +25,16 @@
       </div>
       <container-most-popular />
       <container-sale />
-
+      <container-menu />
+      <container-app />
+      <container-lastnews />
   </main>
 </template>
 
 <script>
+import ContainerApp from './containers-main/ContainerApp.vue'
+import ContainerLastnews from './containers-main/ContainerLastnews.vue'
+import ContainerMenu from './containers-main/ContainerMenu.vue'
 import ContainerMostPopular from './containers-main/ContainerMostPopular.vue'
 import ContainerSale from './containers-main/ContainerSale.vue'
 
@@ -37,7 +42,10 @@ export default {
     name: 'MainTakeOut',
     components: {
         ContainerMostPopular,
-        ContainerSale
+        ContainerSale,
+        ContainerMenu,
+        ContainerApp,
+        ContainerLastnews
     }
 }
 </script>
