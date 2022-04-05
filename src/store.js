@@ -135,5 +135,66 @@ export default Vue.observable({
             content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus? Labore quos laboriosam, velit earum iure sunt eaque odio quisquam eveniet ducimus veritatis. Facere alias sit minima eaque explicabo neque.',
         },
     
+    ],
+    listsFooter:{
+        item:[
+            'Bubu',
+            'Appetizer',
+            'Burger',
+            'Pizzas',
+            'Fries',
+            'Sides',
+            'Desserts',
+            'Beverages',
+            'Specials',         
+            ],
+        item2:[
+            'Home',
+            'Alternate Home',
+            'Menu',
+            'About',
+            'News',
+            'contact Us',
+            'Beverages',
+            'Cart',         
+             ],
+        item3:[
+            'My Account',
+            'Terms of Service',
+            'Privacy Policy',
+            'img',
+            'img',         
+             ],
+    },
+    listOpenHour:[
+        {
+            day: 'Mon -',
+            time: '10AM to 11PM'
+        },
+        {
+            day: 'Tue -',
+            time: '10AM to 11PM'
+        },
+        {
+            day: 'Wen -',
+            time: '10AM to 11PM'
+        },
+        {
+            day: 'Thu -',
+            time: '10AM to 11PM'
+        },
+        {
+            day: 'Sat -',
+            time: '10AM to 11PM'
+        },
+        {
+            day: 'Sun -',
+            time: '10AM to 11PM'
+        },
+        {
+            day: 'Monday -',
+            time: '10AM to 11PM'
+        },
     ]
+            
 });
