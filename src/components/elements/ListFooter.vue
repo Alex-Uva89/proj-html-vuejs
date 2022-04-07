@@ -1,7 +1,7 @@
 <template>
   <div>
       <ul class="list-footer">
-          <li v-for="lists in ListFooter" :key="lists[index]">
+          <li v-for="lists in ListFooter" :key="lists">
               {{lists}}
           </li>
       </ul>
@@ -13,7 +13,7 @@ export default {
     name:'ListFooter',
     props:{
         TitleList: Array,
-        ListFooter: String,
+        ListFooter: Array,
     }
 }
 </script>
@@ -25,12 +25,15 @@ export default {
     list-style: none;
     color: $white;
     gap: 2rem;
+    li{
+        margin-bottom: .5rem;
+    }
     span{
         text-transform: uppercase;
     }
     li:first-child{
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 }
 </style>

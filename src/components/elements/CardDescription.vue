@@ -36,6 +36,11 @@ export default {
     p{
         text-align: center;
         width: 80%;
+        cursor: pointer;
+        transition: filter 1s;
+        &:hover{
+            filter: brightness(80%);
+        }
     }
     
 }

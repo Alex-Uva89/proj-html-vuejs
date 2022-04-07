@@ -1,5 +1,8 @@
 import Vue from "vue";
 
+
+//LOGO
+import logo from './img/takeout-logo.png'
 // OUR MOST POPULAR DISHES
 import fries from './img/skin-on-fries-200x286.jpg'
 import choco from './img/choco-cookie-frappe-200x286.jpg'
@@ -16,9 +19,42 @@ import specialsMenu from './img/background-specials-menu.jpg'
 // LAST NEWS
 import lastNews1 from './img/pancake-burger-400x300.jpg'
 import lastNews2 from './img/new-milkshake-menu-400x300.jpg'
+// FOOTER
+import saleCoupon from './img/footer-coupon.png'
+
+
+
 
 export default Vue.observable({
+    logo: logo,
+    navBar:[
+        {
+            id:'1',
+            item:'Home',
+            link: '#',
+        },
+        {
+            id:'2',
+            item:'Order Online',
+            link: '#',
+        },
+        {
+            id:'3',
+            item:'About',
+            link: '#',
+        },
+        {
+            id:'4',
+            item:'News',
+            link: '#',
+        },
+        {
+            id:'5',
+            item:'Contact Us',
+            link: '#',
+        },
 
+    ],
     elCard:[
         {
         id: '1',
@@ -95,25 +131,25 @@ export default Vue.observable({
     categoriesMenu:[
         {
             id: '1',
-            img:'',
+            icon:'fa-solid fa-burger',
             text: 'Vegetarian',
             color: 'green'
         },
         {
             id: '2',
-            img:'',
+            icon:'fa-solid fa-burger',
             text: 'Gluten Free',
             color: 'yellow'
         },
         {
             id: '3',
-            img:'',
+            icon:'fa-solid fa-burger',
             text: 'Dairy Free',
             color: 'blue'
         },
         {
             id: '4',
-            img:'',
+            icon:'fa-solid fa-burger',
             text: 'Keto Frienldy',
             color: 'brown'
         },
@@ -138,7 +174,7 @@ export default Vue.observable({
     ],
     listsFooter:{
         item:[
-            'Bubu',
+            'Order Online',
             'Appetizer',
             'Burger',
             'Pizzas',
@@ -149,6 +185,7 @@ export default Vue.observable({
             'Specials',         
             ],
         item2:[
+            'navigate',
             'Home',
             'Alternate Home',
             'Menu',
@@ -168,33 +205,60 @@ export default Vue.observable({
     },
     listOpenHour:[
         {
-            day: 'Mon -',
+            day: 'Mon',
             time: '10AM to 11PM'
         },
         {
-            day: 'Tue -',
+            day: 'Tue',
             time: '10AM to 11PM'
         },
         {
-            day: 'Wen -',
+            day: 'Wen',
             time: '10AM to 11PM'
         },
         {
-            day: 'Thu -',
+            day: 'Thu',
             time: '10AM to 11PM'
         },
         {
-            day: 'Sat -',
+            day: 'Sat',
             time: '10AM to 11PM'
         },
         {
-            day: 'Sun -',
+            day: 'Sun',
             time: '10AM to 11PM'
         },
+
+    ],
+    listVoucher: [
         {
-            day: 'Monday -',
-            time: '10AM to 11PM'
-        },
-    ]
-            
+            titleListVoucher: 'Voucher',
+            text:[
+                'Just Use The Code',
+                 'At Checkout'
+                ],
+            marker:'First Order',
+            img:saleCoupon,
+        }
+    ],   
+    formFooter: [
+        {
+            title:'Stay in the loop',
+            small: [
+                'Sign up to receive up to date news and offers directly in your inbox',
+                '@copyright 2012 - 2020 | avada theme by',
+                'ThemeFusion',
+                '| All Right reserved | Powered by ',
+                'WorldPress'
+            ],
+            icons: [
+                logo,
+                logo,
+                logo,
+                logo,
+                logo,
+                logo,
+            ]
+        }
+    ]      
 });

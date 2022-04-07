@@ -63,7 +63,7 @@ main{
           margin: 0 auto;
           background-color: $white;
           position: absolute;
-          bottom: 98%;
+          bottom: 99%;
           left: 50%;
           transform: translate(-50%);
           ul{

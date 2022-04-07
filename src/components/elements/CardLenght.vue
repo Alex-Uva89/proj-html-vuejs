@@ -49,6 +49,7 @@ export default {
             top: 8%;
             left:0;
             background-color: rgba($color: #000000, $alpha: .3);
+            transition: opacity 1s;
             &:hover{
                 opacity: 1;
             }
